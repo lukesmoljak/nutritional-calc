@@ -26,3 +26,6 @@ jobs:
         
       - name: Run unit tests
         run: ./gradlew test --stacktrace
+        
+      - name: Run Klint Static Analysis
+        run: ./gradlew ktlintCheck --stacktrace
